@@ -1,0 +1,15 @@
+import time
+from src.my_advanced_lib.core.decorators import MemoryCache
+
+cache = MemoryCache(expire=60)
+
+@cache
+def heavy_computation(x):
+    time.sleep(0.01)
+    return x * x
+
+start = time.perf_counter()
+for i in range(100):
+    heavy_computation(i)
+end = time.perf_counter()
+print(f"Benchmark completed in {end-start:.4f}s")
