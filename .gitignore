@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Build and distribution
+build/
+dist/
+*.egg
+*.whl
+
+# Sphinx
+docs/build/
+
+# Logs
+*.log
